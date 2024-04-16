@@ -1,7 +1,7 @@
 import React, {StrictMode } from "react";
 import {createRoot} from "react-dom/client";
 import Header from "./heard";
-import Main from "./main";
+import Carrusel from "./carrusel";
 import Aside from "./aside";
 import Footer from "./footer";
 
@@ -13,7 +13,7 @@ root.render(
            <div className="conteiner">
              <div className="row">
                 <div className="col-md-8">
-                   <Main></Main>
+                   <Carrusel></Carrusel>
               </div>
               <div className="col-md-4">
                     <Aside></Aside>

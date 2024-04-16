@@ -1,7 +1,6 @@
 const Aside = ( ) => {
     return <aside>
-               <p>Aside</p>
+            <p>Aside</p>
            </aside>;
 }
-   
-   export default Aside;
+export default Aside;
