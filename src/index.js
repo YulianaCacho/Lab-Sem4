@@ -1,21 +1,26 @@
 import React, {StrictMode } from "react";
-import { createRoot} from "react-dom/client";
+import {createRoot} from "react-dom/client";
+import Header from "./heard";
+import Main from "./main";
+import Aside from "./aside";
+import Footer from "./footer";
 
-
-const Message = ()=>{
-    return <h1>Message: </h1>;
-}
 
 const root = createRoot(document.getElementById("root"));
 root.render(
-<StrictMode>
-    <h1>Titulo desde react</h1>
-
-           <Message message="Hola 1"></Message>
-           <Message message="Hola 2"></Message>
-           <Message></Message>
-           <Message message="ayoh 1"></Message>
-
-           </StrictMode>
+    <StrictMode>
+           <Header></Header>
+           <div className="conteiner">
+             <div className="row">
+                <div className="col-md-8">
+                   <Main></Main>
+              </div>
+              <div className="col-md-4">
+                    <Aside></Aside>
+                 </div>
+              </div>
+            </div>
+           <Footer></Footer>
+    </StrictMode>
 
 );
