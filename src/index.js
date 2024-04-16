@@ -12,10 +12,10 @@ root.render(
            <Header></Header>
            <div className="conteiner">
              <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-6">
                    <Carrusel></Carrusel>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-3">
                     <Aside></Aside>
                  </div>
               </div>
