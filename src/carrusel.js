@@ -5,7 +5,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://static.vecteezy.com/system/resources/thumbnails/038/252/827/small_2x/ai-generated-sunny-tropical-beach-sea-shells-photo.jpg"
+          src="https://concepto.de/wp-content/uploads/2018/09/paginahttps://static.vecteezy.com/system/resources/thumbnails/038/252/827/small_2x/ai-generated-sunny-tropical-beach-sea-shells-photo.jpg-web1-e1537371844166.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
