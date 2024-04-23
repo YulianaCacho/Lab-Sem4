@@ -5,7 +5,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://concepto.de/wp-content/uploads/2018/09/pagina-web1-e1537371844166.jpg"
+          src="https://static.vecteezy.com/system/resources/thumbnails/038/252/827/small_2x/ai-generated-sunny-tropical-beach-sea-shells-photo.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -16,7 +16,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://a2colores.es/wp-content/uploads/2020/02/cabecera-ventales-web-wordpress-800x400-1.jpg"
+          src="https://static.vecteezy.com/system/resources/thumbnails/035/095/662/small_2x/ai-generated-copy-space-tropical-beach-landscape-ai-generative-photo.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -27,7 +27,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://www.comunicare.es/wp-content/uploads/2021/08/web-2.0-e1534779139902.jpg"
+          src="https://i.pinimg.com/474x/17/f0/13/17f013312dfa35c8e242602bb7835ecc.jpg"
           alt="Third slide"
         />
         <Carousel.Caption>
