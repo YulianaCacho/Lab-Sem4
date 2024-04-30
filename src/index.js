@@ -1,7 +1,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import React, {StrictMode } from "react";
-import {createRoot} from "react-dom/client";
+import React, { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import Header from "./layout/heard";
 import Carrusel from "./layout/carrusel";
 import Aside from "./layout/aside";
@@ -11,40 +11,45 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Single from './Single';
+import Single from './single';
+import Basic from './layout/basic';
+
+const feather = require('feather-icons');
+setTimeout(() => {
+  feather.replace();
+}, 1000);
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <StrictMode>
-           <Header></Header>
-           <div className="conteiner">
-             <div className="row">
-                <div className="col-md-6">
-                   <Carrusel></Carrusel>
-                   <Description></Description>
+    element: <Basic />,
+    children: [
+      {
+        path: '',
+        element: <>
+          <div className="conteiner">
+            <div className="row">
+              <div className="col-md-6">
+                <Carrusel></Carrusel>
+                <Description></Description>
               </div>
               <div className="col-md-3">
-                    <Aside></Aside>
-                 </div>
+                <Aside></Aside>
               </div>
             </div>
-           <Footer></Footer>
-       </StrictMode>
-    ),
+          </div>
+        </>
+      },
+
+      {
+        path: " /detalle",
+        element: <Single />,
+      },
+    ],
   },
-  {
-    path: " /detalle",
-    element: <Single/>,
-  },
-  
 ]);
 
-const feather = require('feather-icons');
-setTimeout (() =>{
-    feather.replace();
-}, 1000);
+
 
 const root = createRoot(document.getElementById("root"));
 root.render(
