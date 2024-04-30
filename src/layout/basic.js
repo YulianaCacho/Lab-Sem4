@@ -1,13 +1,13 @@
 import { StrictMode } from "react";
 import { Outlet } from "react-router-dom";
-import Header from "./header";
+import Hearder from "./hearder";
 import Footer from "./footer";
 
 const Basic = () => {
     return (
         <>
             <StrictMode>
-                <Header />
+                <Hearder />
                 <div className="container">
                     <div className="row py-5">
                         <Outlet></Outlet>

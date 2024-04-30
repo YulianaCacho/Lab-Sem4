@@ -2,7 +2,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import Header from "./layout/heard";
+import Header from "./layout/hearder";
 import Carrusel from "./layout/carrusel";
 import Aside from "./layout/aside";
 import Footer from "./layout/footer";
@@ -11,8 +11,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Single from './single';
-import Basic from './layout/basic';
+import Single from "./single";
+import Basic from "./layout/basic";
 
 const feather = require('feather-icons');
 setTimeout(() => {
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: " /detalle",
+        path: " detalle",
         element: <Single />,
       },
     ],
