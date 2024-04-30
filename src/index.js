@@ -2,19 +2,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, {StrictMode } from "react";
 import {createRoot} from "react-dom/client";
-import Header from "./heard";
-import Carrusel from "./carrusel";
-import Aside from "./aside";
-import Footer from "./footer";
-import Description from "./description";
-const feather = require('feather-icons');
-setTimeout (() =>{
-    feather.replace();
-}, 1000);
+import Header from "./layout/heard";
+import Carrusel from "./layout/carrusel";
+import Aside from "./layout/aside";
+import Footer from "./layout/footer";
+import Description from "./layout/description";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Single from './Single';
 
-const root = createRoot(document.getElementById("root"));
-root.render(
-    <StrictMode>
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <StrictMode>
            <Header></Header>
            <div className="conteiner">
              <div className="row">
@@ -28,6 +31,23 @@ root.render(
               </div>
             </div>
            <Footer></Footer>
-    </StrictMode>
+       </StrictMode>
+    ),
+  },
+  {
+    path: " /detalle",
+    element: <Single/>,
+  },
+  
+]);
+
+const feather = require('feather-icons');
+setTimeout (() =>{
+    feather.replace();
+}, 1000);
+
+const root = createRoot(document.getElementById("root"));
+root.render(
+  <RouterProvider router={router} />
 
 );
