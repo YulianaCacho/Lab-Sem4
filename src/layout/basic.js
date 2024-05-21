@@ -7,13 +7,13 @@ const Basic = () => {
     return (
         <>
             <StrictMode>
-                <Hearder />
+                <Hearder /> 
                 <div className="container">
                     <div className="row py-5">
                         <Outlet></Outlet>
                     </div>
                 </div>
-                <Footer />
+                <div style={{backgroundColor:'#b4d4fc'}}> <Footer /> </div>
             </StrictMode>
         </>
     );
