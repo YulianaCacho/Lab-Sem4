@@ -8,8 +8,14 @@ const Single = () => {
      return (<>
          <center><h1>{playas.name}</h1></center>
            <hr></hr>
-           <img src={playas.picture}></img> <br></br>
-           <br></br><center><p>{playas.description}</p></center>
+           <div style={{ display: 'flex', justifyContent: 'center' }}>
+           <img 
+              src={playas.picture} 
+              alt={playas.name} 
+              style={{ marginBottom: '10px', width: '900px', height: 'auto' }} 
+            />
+            </div>
+           <center><p style={{ marginTop: '10px', fontSize: '16px' }}>{playas.description}</p></center>
          
      </>);
 

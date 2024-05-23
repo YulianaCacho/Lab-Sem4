@@ -9,11 +9,11 @@ const Basic = () => {
             <StrictMode>
                 <Hearder /> 
                 <div className="container">
-                    <div className="row py-5">
+                    <div className="row py-4">
                         <Outlet></Outlet>
                     </div>
                 </div>
-                <div style={{backgroundColor:'#b4d4fc'}}> <Footer /> </div>
+                <div style={{backgroundColor:'#e6e6e6'}}> <Footer /> </div>
             </StrictMode>
         </>
     );
